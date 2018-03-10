@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('mainPage');
 Route::get('/portfolio', 'HomeController@index')->name('portfolio');
 
 Route::post('/', 'HomeController@storeComment');
