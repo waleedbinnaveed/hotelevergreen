@@ -78,8 +78,8 @@
                         <div class="formgroup">
                         <div class="col-lg-10 col-lg-offset-1">
 
-                        <label class="radio-inline"><input type="radio" value="b" id="roomType" name="roomType" checked>Basic</label>
-                        <label class="radio-inline"><input type="radio" value="l" id="roomType" name="roomType">Luxury</label>
+                        <label class="radio-inline"><input type="radio" value="Basic" id="roomType" name="roomType" checked>Basic</label>
+                        <label class="radio-inline"><input type="radio" value="Luxury" id="roomType" name="roomType">Luxury</label>
                             </div> 
                             </div>                        
                             

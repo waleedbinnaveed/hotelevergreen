@@ -20,6 +20,7 @@ class CreateRoomsTable extends Migration
             $table->string('type')->nullable() ;
             $table->string('mediaURL')->nullable() ;
             $table->string('bookedBy')->nullable() ; //id of user
+            $table->string('status')->nullable() ; //id of user
             $table->string('price')->nullable() ; //id of user
 
             $table->timestamps();

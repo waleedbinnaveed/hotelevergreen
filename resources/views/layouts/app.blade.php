@@ -66,7 +66,7 @@
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{{ route('portfolio') }}">Media</a>
+              <a class="nav-link js-scroll-trigger" href="{{ route('portfolio') }}">Rooms</a>
             </li>
             @guest
             <li class="nav-item">
@@ -83,9 +83,9 @@
               <a class="btn btn-xl" href="{{ route('upload') }}">+</a>
             </li>
               @endif
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url('/mymedia') }}">My Media</a>
-            </li>
+            {{--<li class="nav-item">--}}
+              {{--<a class="nav-link" href="{{ url('/mymedia') }}">My Rooms</a>--}}
+            {{--</li>--}}
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/userProfile') }}">{{ Auth::user()->name }}</a>
             </li>
@@ -117,7 +117,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Touron 2017</span>
+            <span class="copyright">Copyright &copy; Evergreen 2017</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">

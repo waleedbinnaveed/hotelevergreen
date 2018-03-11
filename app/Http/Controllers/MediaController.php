@@ -47,7 +47,8 @@ class MediaController extends Controller
               'desc' => $_POST['description'],
               'type' => $_POST['roomType'],
               'mediaURL' => $_POST['mediaurl'],
-              'bookedBy' => "Available",
+              'bookedBy' => "",
+              'status' => "available",
               'price' => $_POST['roomPrice']
 
           )
@@ -62,10 +63,15 @@ class MediaController extends Controller
 
 public function adminPanel() {
     $users = User::all();
-    $email=Auth::User()->email;
-        $media = Media::all();
+
+        $email=Auth::User()->email;
+        $room = room::all();
         $comments = comments::all();
-        return view('admin')->with('media',$media)->with('comments',$comments)->with('email',$email)->with('users',$users);
+
+
+
+
+        return view('admin')->with('room',$room)->with('comments',$comments)->with('email',$email)->with('users',$users);
 }
 
     public function deleteUser($email)
