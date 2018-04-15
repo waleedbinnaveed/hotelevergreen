@@ -42,3 +42,6 @@ Route::post('/userProfile', 'MediaController@updateUser')->name('user profile');
 
 Route::get('/mymedia', 'MediaController@mymedia')->name('mymedia');
 Route::post('/mymedia', 'MediaController@updatePost')->name('mymedia');
+
+
+Route::post('/book', 'HomeController@bookRoom');

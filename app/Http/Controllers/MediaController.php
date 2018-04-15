@@ -95,7 +95,7 @@ public function adminPanel() {
        public function deleteMedia($mediaid)
     {
 
-        $mediaa = Media::whereId($mediaid)->first() ;
+        $mediaa = room::whereId($mediaid)->first() ;
         $commentss = comments::whereMediaid($mediaid);
         $mediaa->delete();
         $commentss->delete();
@@ -104,6 +104,7 @@ public function adminPanel() {
         $users = User::all();
         $email=Auth::User()->email;
         $media = Media::all();
+
         $comments = comments::all();
         return redirect('/admin')->with('status', 'The Media has been deleted!')->with('media',$media)->with('comments',$comments)->with('email',$email)->with('users',$users);
 

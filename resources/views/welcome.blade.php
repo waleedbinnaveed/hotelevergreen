@@ -53,7 +53,13 @@
                                     <p>Please Login/Signup to book</p>
                                     @else
 
-                                        <input type="button" class="btn btn-xl" value="Book">
+                                        {{--<input type="button" class="btn btn-xl" value="Book">--}}
+
+                                    <form action="/book" method="post">
+                                        <input type="hidden" name="_token" value="{!! csrf_token() !!}">
+                                        <input name="someid" id="someid"  value="{!! $x->id !!}" hidden>
+                                        <button type="submit" class="btn btn-xl" name="form2">Book</button>
+                                    </form>
                                     @endguest
                                 @else
                                 <p>Booked</p>
