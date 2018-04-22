@@ -144,12 +144,10 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBp6KtcJjdn3eGfLUIkEdnNqprDgZUdN8g",
-    authDomain: "touron-2d89b.firebaseapp.com",
-    databaseURL: "https://touron-2d89b.firebaseio.com",
-    projectId: "touron-2d89b",
-    storageBucket: "touron-2d89b.appspot.com",
-    messagingSenderId: "249584416865"
+    apiKey: "AIzaSyA68oYQOZqVV3uTcFLunQaDZ5Ib7q2klTE",
+    databaseURL: "https://iccproj-4aa94.firebaseio.com",
+    projectId: "iccproj-4aa94",
+    storageBucket: "gs://iccproj-4aa94.appspot.com",
   };
   firebase.initializeApp(config);
 </script>
