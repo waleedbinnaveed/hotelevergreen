@@ -8,6 +8,7 @@ use App\comments;
 use Auth;
 use App\Media;
 
+
 class HomeController extends Controller
 {
     /**
@@ -60,5 +61,23 @@ class HomeController extends Controller
         $room->status="booked";
         $room->save();
         echo("Room Booked Successfully");
+    }
+
+    public function updateRoom()
+    {
+
+
+        $id = $_POST['someid'];
+        $room = room::whereId($id)->first();
+        $room->type=$_POST['roomType'];
+        $room->status=$_POST['roomStatus'];
+        $room->mediaURL=$_POST['mediaurl'] ;
+        $room->desc=$_POST['description'];
+        $room->rno=$_POST['rno'];
+        $room->price=$_POST['roomPrice'];
+
+        $room->save();
+        echo ("Room Updated Successfully");
+
     }
 }

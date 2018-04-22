@@ -16,10 +16,10 @@
     </header>
 
 
-
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Rooms</h2>
@@ -212,6 +212,53 @@
 
     @endforeach
 
+    <div class="container">
+
+        <div class="row">
+
+
+            @guest
+                <p>Please Login/Signup to Rate Hotel</p>
+            @else
+
+                {{--<input type="button" class="btn btn-xl" value="Book">--}}
+
+                {{--<form action="/book" method="post">--}}
+                {{--<input type="hidden" name="_token" value="{!! csrf_token() !!}">--}}
+                {{--<input name="someid" id="someid"  value="{!! $x->id !!}" hidden>--}}
+                {{--<button type="submit" class="btn btn-xl" name="form2">Book</button>--}}
+                {{--</form>--}}
+                <div class="form-inline">
+                    <h1>Rate Our Hotel &nbsp;</h1>
+                    <form action="/r1" method="post">
+                        <input name="someid" id="someid"  value="1" hidden>
+                        <button type="submit" class="btn btn-xl" name="r1">1</button>
+                    </form>
+
+                    <form action="/r2" method="post">
+                        <input name="someid" id="someid"  value="1" hidden>
+                        <button type="submit" class="btn btn-xl" name="r1">2</button>
+                    </form>
+
+                    <form action="/r3" method="post">
+                        <input name="someid" id="someid"  value="1" hidden>
+                        <button type="submit" class="btn btn-xl" name="r1">3</button>
+                    </form>
+
+                    <form action="/r4" method="post">
+                        <input name="someid" id="someid"  value="1" hidden>
+                        <button type="submit" class="btn btn-xl" name="r1">4</button>
+                    </form>
+
+                    <form action="/r5" method="post">
+                        <input name="someid" id="someid"  value="1" hidden>
+                        <button type="submit" class="btn btn-xl" name="r1">5</button>
+                    </form>
+                </div>
+            @endguest
+
+        </div>
+    </div>
 
 
 @endsection

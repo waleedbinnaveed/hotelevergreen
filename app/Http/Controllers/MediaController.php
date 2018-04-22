@@ -111,6 +111,7 @@ public function adminPanel() {
 
     }
 
+
            public function deleteComment($commentid)
     {
 

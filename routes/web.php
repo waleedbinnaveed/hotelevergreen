@@ -45,3 +45,4 @@ Route::post('/mymedia', 'MediaController@updatePost')->name('mymedia');
 
 
 Route::post('/book', 'HomeController@bookRoom');
+Route::post('/updateRoom', 'HomeController@updateRoom');
